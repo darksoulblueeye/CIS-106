@@ -1,0 +1,21 @@
+#input phase
+
+lname = input("Employee Last Name: ")
+salary = int(input("Input Salary: "))
+level = float(input("Input Job Level: "))
+
+#process phase
+
+if level >= 10:
+  rate = .25
+else if level >= 5 AND level <= 9: 
+  rate = .2
+else:
+  rate = .1
+
+bonus = salary * rate
+
+#output phase
+
+print("Last Name: ", lname)
+print("Employee Bonus: ", bonus)
