@@ -1,0 +1,20 @@
+#input phase
+
+amt = input("Enter number of concert tickets: ")
+
+#process phase  
+
+if amt >= 25:
+  ppt = 50
+else if amt >= 10 AND amt <= 24:
+  ppt = 60
+else if amt >= 5 AND amt <= 9: 
+  ppt = 70
+else:
+  ppt = 75
+
+#output phase
+
+print("Amount of Tickets: ", amt)
+print("Price per Ticket: ", ppt)
+print("Total Cost: ", total)
