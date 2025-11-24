@@ -1,0 +1,23 @@
+#input phase
+
+principle = int(input("Enter CD Principle"))
+ytm = int(input("Enter Years to Maturity"))
+
+#process phase
+
+if principle > 100000 AND ytm == 5:
+  intrate = 0.06
+else if principle > 50000 AND principle < 100000 AND ytm == 10:
+  intrate = 0.05
+else if principle > 50000 AND principle < 100000 AND ytm == 5:
+  intrate = 0.04
+else:
+  intrate = 0.02
+
+intamt = intrate * principle
+
+#output phase
+
+print("Principle Amount: ", principle)
+print("Interest Rate: ", intrate)
+print("First Year Interest Amount: ", intamt)
